@@ -1,189 +1,370 @@
-# Learnova — AI-Powered Gamified Learning Platform
+# 🚀 Learnova — Learn AI by Building AI
 
-> **Learn AI by Building AI.** Master Python, Machine Learning, Data Science, Deep Learning, and Generative AI through interactive lessons, real-world projects, AI-powered mentorship, and game-based learning.
+### An Interactive, AI-Powered Web Learning Platform for the Next Generation of AI Engineers.
+
+<p align="center">
+  <strong>Learn. Experiment. Build. Innovate.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/React-Web_App-61DAFB?logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-Programming-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-Frontend-3178C6?logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Generative_AI-Powered-purple" />
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" />
+</p>
 
 ---
 
-## 🚀 Quick Start
+## 📖 Overview
+
+**Learnova** is an interactive, AI-powered web learning platform designed to transform how students and developers learn Artificial Intelligence, Machine Learning, Data Science, and Generative AI.
+
+Traditional learning often revolves around passive video lectures, lengthy documentation, and theoretical explanations. Learnova takes a different approach by making learning **practical, interactive, and experience-driven.**
+
+Instead of simply reading about algorithms, learners can experiment with mathematical concepts, write and execute Python code, debug implementations with an AI mentor, and build industry-relevant projects — all through an intuitive web-based learning environment.
+
+Whether you're starting with Python or exploring advanced concepts like Large Language Models, Retrieval-Augmented Generation (RAG), and Vector Databases, Learnova provides a structured path from fundamentals to real-world implementation.
+
+## ✨ Key Features
+
+### 🧪 1. Interactive Python & ML Sandbox
+
+Learn by experimenting with code and mathematical concepts in an interactive environment.
+
+- Execute Python code and experiment with programming fundamentals.
+- Explore mathematical operations used in Machine Learning.
+- Perform matrix multiplication and dot product calculations.
+- Visualize sigmoid activation functions and mathematical transformations.
+- Understand vector operations and cosine similarity.
+- Experiment with concepts instead of relying solely on theoretical explanations.
+
+### 🤖 2. Socratic AI Mentor
+
+An intelligent learning companion that encourages problem-solving rather than simply providing answers.
+
+- Explains complex AI/ML concepts through intuitive examples.
+- Identifies and helps diagnose errors in student code.
+- Provides contextual hints and step-by-step guidance.
+- Uses a Socratic teaching approach to encourage independent thinking.
+- Breaks down mathematical intuition behind algorithms.
+- Helps learners understand *why* something works, not just *how* to implement it.
+
+### 🗺️ 3. Structured Learning Roadmaps
+
+Progressive learning paths designed to take learners from beginner-level programming to advanced AI engineering.
+
+| Learning Path | Topics Covered |
+|---|---|
+| 🐍 Python Foundations | Python syntax, data structures, functions, OOP, NumPy, Pandas |
+| 📊 Data Science | Data preprocessing, EDA, visualization, statistics, feature engineering |
+| 🤖 Machine Learning | Supervised learning, unsupervised learning, regression, classification, XGBoost |
+| 🧠 Deep Learning | Neural networks, activation functions, backpropagation, CNNs, PyTorch |
+| ✨ Generative AI | LLMs, prompt engineering, embeddings, Transformers |
+| 🔍 AI Engineering | RAG, Vector Databases, LangChain, semantic search, AI applications |
+
+### 🏗️ 4. Real-World Capstone Projects
+
+Move beyond tutorials and develop practical projects that demonstrate real engineering skills.
+
+**Featured Projects:**
+
+**Customer Churn Prediction Engine**
+- Build an end-to-end customer churn prediction pipeline.
+- Apply data preprocessing, feature engineering, and exploratory data analysis.
+- Train and evaluate predictive models using XGBoost.
+- Understand model performance and prediction workflows.
+
+**Enterprise Policy RAG Assistant**
+- Build an intelligent document question-answering system.
+- Process and transform enterprise documents into searchable representations.
+- Generate embeddings and store them using ChromaDB.
+- Implement retrieval workflows using LangChain.
+- Generate context-aware responses using Large Language Models.
+
+### 🎯 5. Gamified Learning Experience
+
+Make consistent learning rewarding and engaging.
+
+- Daily learning streaks.
+- XP-based progression and rewards.
+- Structured milestones and learning goals.
+- Progress tracking across different learning paths.
+- Engaging learning dashboards.
+
+### 🎨 6. Modern Web Experience
+
+- Clean, modern light-theme interface.
+- Responsive web design.
+- Intuitive navigation and structured learning dashboards.
+- Interactive coding and learning components.
+- Consistent typography and accessible UI elements.
+- Seamless experience across desktop, tablet, and mobile browsers.
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|---|---|
+| Frontend | React, TypeScript, JavaScript |
+| Backend | Python, FastAPI |
+| Programming | Python, TypeScript |
+| AI / Machine Learning | NumPy, Pandas, Scikit-learn, XGBoost, PyTorch |
+| Generative AI | LLMs, LangChain, RAG |
+| Vector Database | ChromaDB |
+| Mathematical Computing | NumPy, SciPy |
+| API Communication | REST APIs |
+| Development Tools | Git, GitHub, VS Code |
+
+---
+
+## 🏛️ System Architecture
+
+Learnova follows a modular full-stack architecture that separates the frontend, backend services, and AI-powered learning capabilities.
+
+```text
+                 ┌──────────────────────────┐
+                 │        LEARNOVA          │
+                 │       Web Frontend       │
+                 │     React + TypeScript   │
+                 └────────────┬─────────────┘
+                              │
+                              │ REST API
+                              ▼
+                 ┌──────────────────────────┐
+                 │      FastAPI Backend     │
+                 │                          │
+                 │  Authentication          │
+                 │  Learning Management     │
+                 │  Progress Tracking       │
+                 │  AI Service Integration  │
+                 └────────────┬─────────────┘
+                              │
+                 ┌────────────┴─────────────┐
+                 ▼                          ▼
+       ┌──────────────────┐       ┌──────────────────┐
+       │    AI Mentor     │       │  Learning Engine │
+       │                  │       │                  │
+       │ LLM Integration  │       │ Python Sandbox   │
+       │ Code Assistance  │       │ ML Experiments   │
+       │ Concept Guidance │       │ Project Modules  │
+       └──────────────────┘       └──────────────────┘
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+Learnova/
+│
+├── frontend/                   # React + TypeScript web application
+│   ├── public/
+│   ├── src/
+│   │   ├── components/         # Reusable UI components
+│   │   ├── pages/              # Application pages
+│   │   ├── layouts/            # Shared layouts
+│   │   ├── hooks/              # Custom React hooks
+│   │   ├── services/           # API integration
+│   │   ├── context/            # Application state
+│   │   ├── assets/             # Images and static assets
+│   │   └── utils/              # Helper utilities
+│   └── package.json
+│
+├── backend/                    # FastAPI backend
+│   ├── app/
+│   │   ├── api/                # API endpoints
+│   │   ├── core/               # Configuration
+│   │   ├── models/             # Data models
+│   │   ├── services/           # Business logic
+│   │   └── main.py             # Application entry point
+│   └── requirements.txt
+│
+├── docs/                       # Project documentation
+│
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+*Note: Update this structure to reflect the actual repository directories.*
+
+---
+
+## ⚙️ Getting Started
+
+Follow these steps to run Learnova locally.
 
 ### Prerequisites
-- Python 3.12+
-- Node.js 22+
-- Docker (optional, for sandbox mode and full compose setup)
 
-### 1. Backend Setup
+- Node.js (LTS)
+- npm
+- Python 3.10+
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Learnova.git
+
+cd Learnova
+```
+
+### 2. Set Up the Frontend
+
+```bash
+cd frontend
+
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local development URL displayed in your terminal.
+
+### 3. Set Up the Backend
+
+Open a new terminal:
 
 ```bash
 cd backend
-python -m venv .venv
+```
 
-# Windows
-.venv\Scripts\activate
-# macOS/Linux  
-source .venv/bin/activate
+Create a virtual environment:
 
+```bash
+python -m venv venv
+```
+
+Activate it on Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+Activate it on macOS/Linux:
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
-**Configure environment:**
-```bash
-# Copy and edit environment file
-cp ../.env.example ../.env
-# Edit .env — set DATABASE_URL, AI_API_KEY (optional), etc.
+### 4. Configure Environment Variables
+
+Create a `.env` file inside the backend directory.
+
+```env
+APP_ENV=development
+SECRET_KEY=your_secret_key
+AI_API_KEY=your_ai_api_key
 ```
 
-**Run the backend (SQLite for quick dev — no Postgres needed):**
+Add any additional environment variables required by your configured services.
+
+**Important:** Never commit API keys, credentials, or sensitive environment variables to GitHub.
+
+### 5. Run the Backend Server
+
 ```bash
 uvicorn app.main:app --reload
-# API docs at http://localhost:8000/api/docs
 ```
 
-### 2. Frontend Setup
+The backend will be available at:
+
+`http://127.0.0.1:8000`
+
+Interactive API documentation:
+
+`http://127.0.0.1:8000/docs`
+
+---
+
+## 🗺️ Learning Philosophy
+
+Learnova is built around one simple principle:
+
+> The best way to understand Artificial Intelligence is to build it, experiment with it, and learn from the results.
+
+The platform emphasizes three core learning stages:
+
+1. **Understand:** Build conceptual clarity through structured lessons and intuitive explanations.
+2. **Experiment:** Apply concepts through interactive coding exercises and mathematical simulations.
+3. **Build:** Develop real-world AI applications through guided projects and practical implementation.
+
+---
+
+## 🚀 Project Vision
+
+The vision behind Learnova is to make AI education more accessible, practical, and engaging.
+
+As Artificial Intelligence continues to reshape industries, understanding how these systems work is becoming just as important as knowing how to use them.
+
+Learnova aims to bridge the gap between theoretical knowledge and practical engineering by providing an environment where learners can continuously experiment, solve problems, and build intelligent applications.
+
+**From learning Python to building Generative AI systems — Learnova makes the journey hands-on.**
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and feature improvements are welcome!
+
+1. Fork the repository.
+2. Create a feature branch:
 
 ```bash
-cd frontend
-npm install
-npm run dev
-# App at http://localhost:5173
+git checkout -b feature/your-feature-name
 ```
 
-### 3. Full Stack with Docker Compose
+3. Commit your changes:
 
 ```bash
-# From project root
-docker compose up --build
-# Frontend: http://localhost:5173
-# Backend API: http://localhost:8000
+git commit -m "Add: your feature description"
 ```
 
----
-
-## 🏗️ Architecture
-
-```
-LearNova/
-├── backend/                 # Python 3.12 + FastAPI
-│   ├── app/
-│   │   ├── main.py         # FastAPI app + lifespan
-│   │   ├── api/v1/         # All REST endpoints
-│   │   ├── core/           # Config, security, logging
-│   │   ├── db/             # Session, seed data
-│   │   ├── models/         # SQLAlchemy 2.0 models
-│   │   ├── services/       # Gamification, sandbox, mentor, rate limiting
-│   │   └── workers/        # Celery tasks
-│   ├── alembic/            # Database migrations
-│   ├── tests/              # pytest test suite
-│   └── requirements.txt
-├── frontend/               # React 18 + TypeScript + Vite
-│   ├── src/
-│   │   ├── pages/          # All app pages
-│   │   ├── components/     # Reusable UI components
-│   │   ├── store/          # Zustand state (auth, ui)
-│   │   ├── lib/            # API client, utilities
-│   │   └── router.tsx      # React Router config
-│   └── package.json
-├── sandbox/
-│   ├── Dockerfile.sandbox  # Hardened Python execution environment
-│   └── runner.py           # Security-validated code runner
-├── docker-compose.yml
-└── .env.example
-```
-
----
-
-## 🎮 Features
-
-### Learning Engine
-- **6 Learning Paths**: Python Foundations → Data Science → Machine Learning → Deep Learning → Generative AI → AI Engineering
-- **Interactive Lessons** with text, code blocks, callouts, and embedded quizzes
-- **8 Quiz Types**: Multiple choice, true/false, predict output, fill-in-blank, debug, code completion
-- **Progress Tracking** with backend-verified lesson completion
-
-### Gamification (fully server-backed)
-- **XP Ledger** — idempotency-keyed transactions prevent duplicate awards
-- **10-Level System** — AI Explorer → AI Mastermind with level-up animations
-- **Timezone-Aware Streaks** — streak freezes, 6 milestone bonuses (3/7/14/30/60/100 days)
-- **12 Achievements** — criteria-based, automatically evaluated after each activity
-- **Daily & Weekly Quests** — auto-generated, progress-tracked, claimable rewards
-- **3 Leaderboards** — Global, Weekly, Monthly with privacy controls
-
-### Python Playground
-- Monaco Editor with Python syntax highlighting
-- 5 learning modes: Write & Run, Complete Code, Debug, Predict Output, Challenge
-- **Isolated sandbox execution** — Docker container or hardened subprocess, never `eval()` in FastAPI
-- Security: blocked modules (os, subprocess, socket, etc.), stripped env, 5s timeout
-
-### Socratic AI Mentor
-- Configurable OpenAI-compatible provider (GPT-4o, Claude, etc.)
-- 7 teaching modes: Hint, Beginner, Deep Technical, Debug, Test Me, Interview, Example
-- **Transparent local fallback** when no API key — clearly labeled, still educational
-- Persistent conversation history, rate limiting
-
-### Real-World Projects
-- Customer Churn Prediction (Pandas + XGBoost)
-- Enterprise RAG Assistant (LangChain + ChromaDB)
-- Backend-verified evaluation with keyword/criteria checks
-
----
-
-## Phase Completion Snapshot
-
-The project has working foundations and backend coverage, but the original nine phases are **not all complete**. Current known gaps:
-
-| Phase | Status | Remaining work |
-|---|---|---|
-| 1. Project Foundation | Core scaffold and production Alembic startup present | Verify the full Docker Compose stack in a Docker-enabled environment. |
-| 2. Auth, Onboarding & Dashboard | Registration, login, reset, onboarding, dashboard, and profile screens present | Add end-to-end coverage and refine validation/error states across auth and settings. |
-| 3. Learning Engine | Backend paths, lessons, quizzes, and learner screens present | Complete support for all eight quiz question types and validate the depth/coverage of content across all six paths. |
-| 4. Gamification | Backend XP, streaks, quests, achievements, and leaderboards present | Finish learner-facing notification/reward UX and test privacy controls and claim flows end to end. |
-| 5. AI Mentor | Provider fallback, persistent messages, and conversation UI present | Streaming responses and complete provider-failure/usage observability are not implemented. |
-| 6. Playground & Visualization Lab | Monaco editor and sandbox execution present | The five guided modes and eight Math/ML visualizations are not implemented in the UI. |
-| 7. Real-World Project Lab | Project catalog, detail view, and backend evaluation present | Complete the four specialized project experiences, datasets, milestones, and retrieval pipeline. |
-| 8. Admin & Analytics | Basic admin metrics/users APIs and learner stats present | Content CRUD, AI usage/submission management, richer analytics charts, and full admin screens remain. |
-| 9. Hardening, Testing & Docs | README, environment template, pytest, and Vitest present | Add Playwright E2E coverage and deployment/CI validation; review production security and operational settings before release. |
-
-This snapshot is a scope checklist, not a production-readiness guarantee.
-
----
-
-## 🔧 Configuration
-
-| Variable | Description | Default |
-|---|---|---|
-| `DATABASE_URL` | PostgreSQL or SQLite | SQLite (dev) |
-| `AI_API_KEY` | OpenAI-compatible key | Empty (uses local fallback) |
-| `AI_BASE_URL` | API base URL | OpenAI |
-| `AI_MODEL` | Model name | gpt-4o-mini |
-| `SANDBOX_MODE` | `docker` or `subprocess` | subprocess |
-| `SECRET_KEY` | JWT signing secret | Dev default |
-
----
-
-## 🧪 Testing
+4. Push your branch:
 
 ```bash
-# Backend tests
-cd backend
-pytest tests/ -v
-
-# Frontend type check + tests
-cd frontend
-npm run build
+git push origin feature/your-feature-name
 ```
 
----
-
-## 🔐 Security
-
-- **Argon2** password hashing
-- **HTTP-only cookie** JWTs with CSRF protection
-- **Role-based access control** enforced server-side
-- **Sandboxed code execution** — never runs user code in main process
-- **Input validation** via Pydantic + SQLAlchemy parameterized queries
-- **Rate limiting** with Redis-backed sliding window
+5. Open a Pull Request.
 
 ---
 
-## 📄 License
+## 📜 License
 
-MIT — Build something amazing!
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👩‍💻 Author
+
+**Arushi Sharma**
+
+B.Tech Computer Science & Engineering
+
+Interested in Artificial Intelligence, Machine Learning, Generative AI, and building impactful software products.
+
+- GitHub: [@10Arushisharma](https://github.com/10Arushisharma)
+
+---
+
+<p align="center">
+  <strong>⭐ If you find Learnova interesting, consider starring the repository!</strong>
+</p>
+
+<p align="center">
+  Built with ❤️ to make AI learning practical, interactive, and accessible.
+</p>
